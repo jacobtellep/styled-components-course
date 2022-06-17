@@ -2,13 +2,14 @@
 // into props when a react component is passed into a styled component
 
 import styled from 'styled-components';
-import { color } from '../utils';
+import { color, setupBorder } from '../utils';
 
 const ComplexTitle = ({ title, className }) => {
   return (
     <div className={className}>
       <h1>{title}</h1>
       <div className='underline'></div>
+      <div className='box'></div>
     </div>
   );
 };
@@ -23,6 +24,11 @@ const Wrapper = styled(ComplexTitle)`
     height: 0.25rem;
     background: ${color.red};
     margin: 0 auto;
+  }
+
+  .box {
+    height: 10px;
+    border: ${setupBorder({ width: 5, color: 'green' })};
   }
 `;
 

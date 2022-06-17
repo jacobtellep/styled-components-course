@@ -23,6 +23,20 @@ const StyledCard = styled.article`
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
   }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    h4 {
+      text-transform: capitalize;
+    }
+
+    p {
+      color: var(--primary);
+      font-weight: 700;
+    }
+  }
 `;
 
 export default Card;

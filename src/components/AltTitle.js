@@ -2,6 +2,7 @@
 // into props when a react component is passed into a styled component
 
 import styled from 'styled-components';
+import { color } from '../utils';
 
 const ComplexTitle = ({ title, className }) => {
   return (
@@ -20,7 +21,7 @@ const Wrapper = styled(ComplexTitle)`
   .underline {
     width: 5rem;
     height: 0.25rem;
-    background: #645cff;
+    background: ${color.red};
     margin: 0 auto;
   }
 `;

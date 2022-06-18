@@ -50,6 +50,7 @@ const StyledCard = styled.article`
     cursor: pointer;
   }
 
+  // this is how you can do media queries in styled components
   @media (min-width: 768px) {
     max-width: 600px;
   }

@@ -18,4 +18,11 @@ export const HipsterButton = styled(DefaultButton)`
   background: transparent;
   color: #645cff;
   border: 1px solid #645cff;
+  padding: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
 `;
